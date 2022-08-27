@@ -17,6 +17,8 @@ score = 0
 def SpellRound():
     # Fetch a random word
     word_to_spell = r.get_random_word(hasDictionaryDef="true")
+    if word_to_spell == None:
+        return SpellRound()
 
     if word_to_spell:
         word_to_spell = word_to_spell.lower()
