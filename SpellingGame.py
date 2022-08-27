@@ -46,5 +46,5 @@ for i in range(number_of_rounds):
     score += SpellRound()
 
 
-text_speech.say(f"You scored {score} points")
+text_speech.say(f"Congratulations! You scored {score} out of 10 points")
 text_speech.runAndWait()
